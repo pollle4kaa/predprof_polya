@@ -1,4 +1,3 @@
-#ord
 import csv
 from random import choice
 def hash(n):
