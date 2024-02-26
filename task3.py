@@ -9,7 +9,7 @@ with open ('scientist.txt','r',encoding='utf-8') as file:
             all_dates.append(date)
 while n!='эксперимент':
     n=n.replace('.','-')
-    n=n[-4]+n[-3]+n[-2]+n[-1]+'-'+n[3]+n[4]+'-'+n[0]+n[1]
+    n=n[-4]+n[-3]+n[-2]+n[-1]+'-'+n[3]+n[4]+'-'+n[0]+n[1] #изменение исходного форматирования даты для дальнейшего поиска
     with open ('scientist.txt','r',encoding='utf-8') as file:
         data = file.read().split('\n')[1:-1]
         if n not in all_dates:
@@ -19,7 +19,7 @@ while n!='эксперимент':
                 s = i.split('#')
                 date = s[2]
                 name = s[0].split(' ')
-                namenew = name[0]+' '+name[1][0]+'.'+name[2][0]+'.'
+                namenew = name[0]+' '+name[1][0]+'.'+name[2][0]+'.' 
                 if date==n:
                     print(f'Ученый {namenew} создал препарат: {s[1]} - {date}')
                     break
