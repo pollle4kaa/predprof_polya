@@ -15,10 +15,10 @@ with open ('scientist.txt','r',encoding='utf-8') as file:
         for i in data:
             s = i.split('#')
             all_sc.append(s)
-        all_sc.sort(key = lambda x: x[2])
+        all_sc.sort(key = lambda x: x[2]) #сортировка массива по дате создания препарата
         for i in range (len(all_sc)):
-            scien = all_sc[i][0]
-            prep = all_sc[i][1]
+            scien = all_sc[i][0] #ученый
+            prep = all_sc[i][1] #препарат
             if prep not in prep_or:
                 w.writerow(all_sc[i])
                 prep_or.append(prep)
