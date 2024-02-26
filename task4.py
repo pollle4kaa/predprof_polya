@@ -15,7 +15,7 @@ with open ('scientist.txt','r',encoding='utf-8') as file:
             login = name[0]+'_'+name[1][0]+name[2][0]
             password=''
             while (len([x for x in password if x in 'qwertyuiopasdfghjklzxcvbnm'])>0 and len([x for x in password if x in 'QWERTYUIOPASDFGHJKLZXCVBNM'])>0 and len([x for x in password if x in '0123456789'])>0)==0:
-                password=choice(alp)+choice(alp)+choice(alp)+choice(alp)+choice(alp)+choice(alp)+choice(alp)+choice(alp)+choice(alp)+choice(alp) #генерация пароля
+                password=choice(alp)+choice(alp)+choice(alp)+choice(alp)+choice(alp)+choice(alp)+choice(alp)+choice(alp)+choice(alp)+choice(alp) #генерация пароля длиной 10 символов
             s.append(login)
             s.append(password)
             w.writerow(s)
