@@ -28,16 +28,3 @@ print('Разработчиками Аллопуринола были такие
 for i in range (1,len(sc)):
     print(f'{sc[i][0]} - {sc[i][1]}')
 print(f'Оригинальный рецепт принадлежит: {sc[0][0]}')
-
-
-
-
-
-
-
-
-
-
-
-
-#ScientistName#preparation#date#components
